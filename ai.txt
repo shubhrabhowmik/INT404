@@ -1,0 +1,596 @@
+import tkinter as tk
+root=tk.Tk()
+q=0
+canvas = tk.Canvas(root,height=800,width=100000,bg="yellow")
+canvas.create_rectangle(0,0,10,10,fill="black")
+label=tk.Label(root,text="LPU NAVIGATION ",font=("impact",20),bg='black',fg='lightgreen')
+label.place(x=600,y=0,width=300,height=30)
+canvas.create_rectangle(600,100,650,180,fill="black")#30
+label30=tk.Label(root,text="30",font=("impact",30),bg='black',fg='White')
+label30.place(x=600,y=100,width=50,height=80)
+canvas.create_rectangle(600,200,650,280,fill="black")#29
+label29=tk.Label(root,text="29",font=("impact",30),bg='black',fg='White')
+label29.place(x=600,y=200,width=50,height=80)
+canvas.create_rectangle(600,300,650,380,fill="black")#28
+label=tk.Label(root,text="28",font=("impact",30),bg='black',fg='White')
+label.place(x=600,y=300,width=50,height=80)
+canvas.create_rectangle(600,400,650,480,fill="black")#27
+label=tk.Label(root,text="27",font=("impact",30),bg='black',fg='White')
+label.place(x=600,y=400,width=50,height=80)
+canvas.create_rectangle(600,500,650,580,fill="black")#26
+label=tk.Label(root,text="26",font=("impact",30),bg='black',fg='White')
+label.place(x=600,y=500,width=50,height=80)
+canvas.create_rectangle(600,600,650,680,fill="black")#25
+label=tk.Label(root,text="25",font=("impact",30),bg='black',fg='White')
+label.place(x=600,y=600,width=50,height=80)
+canvas.create_rectangle(700,100,780,150,fill="black")#32
+label=tk.Label(root,text="32",font=("impact",30),bg='black',fg='White')
+label.place(x=700,y=100,width=80,height=50)
+canvas.create_rectangle(800,100,880,150,fill="black")#33
+label=tk.Label(root,text="33",font=("impact",30),bg='black',fg='White')
+label.place(x=800,y=100,width=80,height=50)
+canvas.create_rectangle(900,100,980,150,fill="black")#34
+label=tk.Label(root,text="34",font=("impact",30),bg='black',fg='White')
+label.place(x=900,y=100,width=80,height=50)
+canvas.create_polygon(700,200,1000,200,700,620,fill="black")#36/38
+label=tk.Label(root,text="36",font=("impact",30),bg='black',fg='White')
+label.place(x=850,y=220,width=80,height=50)
+label=tk.Label(root,text="38",font=("impact",30),bg='black',fg='White')
+label.place(x=700,y=380,width=80,height=50)
+canvas.create_polygon(800,250,750,300,810,465,920,310,fill="grey50")#37
+label=tk.Label(root,text="37",font=("impact",30),bg='grey50',fg='White')
+label.place(x=800,y=310,width=80,height=50)
+canvas.create_arc(580,80,820,320,extent=-90,fill="grey30")#35
+label=tk.Label(root,text="35",font=("impact",30),bg='grey30',fg='White')
+label.place(x=700,y=220,width=80,height=50)
+#canvas.create_rectangle(420,60,1129,85,fill="orange")#r1
+#canvas.create_polygon(660,680,665,720,1130,85,1110,60,fill="orange")#r2
+canvas.create_rectangle(1100,560,1200,600,fill="black")#BH5
+label=tk.Label(root,text="BH5",font=("impact",30),bg='black',fg='White')
+label.place(x=1110,y=560,width=80,height=40)
+canvas.create_rectangle(1000,700,1100,750,fill="black")#aaprt.
+label=tk.Label(root,text="apprt.",font=("impact",20),bg='black',fg='White')
+label.place(x=1000,y=700,width=80,height=50)
+canvas.create_rectangle(330,180,400,300,fill="black")#uni-p
+label=tk.Label(root,text="unip",font=("impact",20),bg='black',fg='White')
+label.place(x=330,y=200,width=70,height=50)
+canvas.create_polygon(360,0,360,60,400,60,400,40,420,40,420,0,fill="black")#biss40
+label=tk.Label(root,text="biss.",font=("impact",20),bg='black',fg='White')
+label.place(x=360,y=0,width=50,height=30)
+canvas.create_rectangle(330,0,355,40,fill="black")#DSW
+label=tk.Label(root,text="d\ns\nw",font=("impact",10),bg="black",fg='White')
+label.place(x=330,y=0,width=20,height=40)
+canvas.create_rectangle(280,180,330,300,fill="darkgrey")#uni-mall
+label=tk.Label(root,text="uni\nmall",font=("impact",10),bg='darkgrey',fg='white')
+label.place(x=280,y=200,width=50,height=80)
+canvas.create_rectangle(320,380,370,460,fill="black")#physical
+label=tk.Label(root,text="phyed.",font=("impact",10),bg='black',fg='White')
+label.place(x=320,y=380,width=50,height=50)
+canvas.create_line(0,100,250,100,440,100,500,70,1120,70,650,720,850,660,1200,660,1200,800,1200,660,850,660,650,720,640,800,650,720,300,720,300,800,300,350,440,350,440,820,440,100,250,100,250,300,300,350)
+label=tk.Label(root,text="inputs ",font=("impact",20),bg='black',fg='White')
+label.place(x=20,y=90,width=150,height=30)
+label=tk.Label(root,text="dsw\nbiss\nunip\nunimall\nphyed\n25\n26\n27\n28\n29\n30\n32\n33\n34\n35\n36\n37\n38\nBH5\napprt ",font=("impact",15),justify='left',bg='darkblue',fg='White')
+label.place(x=20,y=130,width=150)
+label=tk.Label(root,text="where are you ",font=("impact",10),bg='black',fg='White')
+label.place(x=1300,y=50,width=90,height=30)
+
+inter1=tk.Entry(root)
+inter1.place(x=1400,y=50,width=50,height=30)
+
+label=tk.Label(root,text="where to go ",font=("impact",10),bg='black',fg='White')
+label.place(x=1300,y=100,width=90,height=30)
+inter2=tk.Entry(root)
+inter2.place(x=1400,y=100,width=50,height=30)
+
+compute1=tk.Button(root,text="enter",font="impact",bg='red',fg='White',bd=2,command=lambda:getc(inter1.get(),inter2.get()))
+compute1.place(x=1350,y=150,width=70,height=30)
+
+
+
+#################################   NINDECATE FUNTION - change color of the current and destination  ############################
+def nindecate(c,d):
+    if(c=='30' or d=='30'):
+        print("k")
+        label1=tk.Label(root,text="30",font=("impact",30),bg='black',fg='red')
+        label1.place(x=600,y=100,width=50,height=80)
+        
+    if(c=='29' or d=='29'):
+        label2=tk.Label(root,text="29",font=("impact",30),bg='black',fg='red')
+        label2.place(x=600,y=200,width=50,height=80)
+    if(c=='28' or d=='28'):
+        label2=tk.Label(root,text="28",font=("impact",30),bg='black',fg='red')
+        label2.place(x=600,y=300,width=50,height=80)
+    if(c=='27' or d=='27'):
+        label3=tk.Label(root,text="27",font=("impact",30),bg='black',fg='red')
+        label3.place(x=600,y=400,width=50,height=80)
+    if(c=='26' or d=='26'):
+        label4=tk.Label(root,text="26",font=("impact",30),bg='black',fg='red')
+        label4.place(x=600,y=500,width=50,height=80)
+    if(c=='25' or d=='25'):
+        label5=tk.Label(root,text="25",font=("impact",30),bg='black',fg='red')
+        label5.place(x=600,y=600,width=50,height=80)
+    if(c=='32' or d=='32'):
+        label6=tk.Label(root,text="32",font=("impact",30),bg='black',fg='red')
+        label6.place(x=700,y=100,width=80,height=50)
+    if(c=='33' or d=='33'):
+        label7=tk.Label(root,text="33",font=("impact",30),bg='black',fg='red')
+        label7.place(x=800,y=100,width=80,height=50)
+    if(c=='34' or d=='34'):
+        label8=tk.Label(root,text="34",font=("impact",30),bg='black',fg='red')
+        label8.place(x=900,y=100,width=80,height=50)
+    if(c=='35' or d=='35'):
+        label9=tk.Label(root,text="35",font=("impact",30),bg='grey30',fg='red')
+        label9.place(x=700,y=220,width=80,height=50)
+    if(c=='36' or d=='36'):
+        label10=tk.Label(root,text="36",font=("impact",30),bg='black',fg='red')
+        label10.place(x=850,y=220,width=80,height=50)
+    if(c=='37' or d=='37'):
+        label11=tk.Label(root,text="37",font=("impact",30),bg='grey50',fg='red')
+        label11.place(x=800,y=310,width=80,height=50)
+    if(c=='38' or d=='38'):
+        label12=tk.Label(root,text="38",font=("impact",30),bg='black',fg='red')
+        label12.place(x=700,y=380,width=80,height=50)
+    if(c=='biss' or d=='biss'):
+        label13=tk.Label(root,text="biss.",font=("impact",20),bg='black',fg='red')
+        label13.place(x=360,y=0,width=50,height=30)
+        b=canvas.create_oval(370,80,390,100,fill="red")
+    if(c=='dsw' or d=='dsw'):
+        label14=tk.Label(root,text="d\ns\nw",font=("impact",10),bg="black",fg='red')
+        label14.place(x=330,y=0,width=20,height=40)
+        b=canvas.create_oval(340,80,360,100,fill="red")
+
+    if(c=='unip' or d=='unip'):
+        label15=tk.Label(root,text="uni-p",font=("impact",20),bg='black',fg='red')
+        label15.place(x=330,y=200,width=70,height=50)
+    if(c=='unimall' or d=='unimall'):
+        label16=tk.Label(root,text="uni-\nmall",font=("impact",10),bg='darkgrey',fg='red')
+        label16.place(x=280,y=200,width=50,height=80)
+    if(c=='phyed' or d=='phyed'):
+        label17=tk.Label(root,text="phy.\ned.",font=("impact",10),bg='black',fg='red')
+        label17.place(x=320,y=380,width=50,height=50)
+        b=canvas.create_oval(340,340,360,360,fill="red")
+    if(c=='apprt' or d=='apprt'):
+        label=tk.Label(root,text="apprt.",font=("impact",20),bg='black',fg='red')
+        label.place(x=1000,y=700,width=80,height=50)
+    if(c=='BH5' or d=='BH5'):
+        label18=tk.Label(root,text="BH5",font=("impact",30),bg='black',fg='red')
+        label18.place(x=1110,y=560,width=80,height=40)
+        b1=canvas.create_oval(1050,660,1070,680,fill="red")
+        b1=canvas.create_oval(1050,620,1070,640,fill="red")  
+        b1=canvas.create_oval(1150,620,1170,640,fill="red")
+    
+                                   
+######################################### NEB FUNTION - it store neibours of all locations , and return an array of the neibours of the current location ##################       
+def neb(c):
+    print("3")
+               #neighbours
+    n30= ['29','32']
+    if (c=='30'):
+        return (n30)
+    n29= ['28','30']
+    if (c=='29'):
+        return (n29)
+    n32= ['30','33']
+    if (c=='32'):
+        return (n32)
+    n33= ['32','34','35','36']
+    if (c=='33'):
+        return (n33)
+    n34= ['33']
+    if (c=='34'):
+        return (n34)
+    n35= ['36','38']
+    if (c=='35'):
+        return (n35)
+    n36= ['35','37']
+    if (c=='36'):
+        return (n36)
+    n37= ['36','38']
+    if (c=='37'):
+        return (n37)
+    n38= ['28','35','37']
+    if (c=='38'):
+        return (n38)
+    n25= ['26']
+    if (c=='25'):
+        return (n25)
+    n26= ['25','27','38']
+    if (c=='26'):
+        return (n26)
+    n27= ['26','28']
+    if (c=='27'):
+        return (n27)
+    n28= ['27','29','38']
+    if (c=='28'):
+        return (n28)
+    nbiss= ['dsw','unimall','unip']
+    if (c=='biss'):
+        return (nbiss)
+    ndsw= ['biss','unimall','unip']
+    if (c=='dsw'):
+        return (ndsw)
+    nunip= ['unimall','dsw','biss','phyed']
+    if (c=='unip'):
+        return (nunip)
+    nunimall= ['unip','dsw','biss','phyed']
+    if (c=='unimall'):
+        return (nunimall)
+    uphyed=['unimall','unip']
+    if (c=='phyed'):
+        return (uphyed)
+    uBH4=['apprt']
+    uapprt=['BH5']
+    if(c=='BH5'):
+        return (uBH4)
+    if(c=='apprt'):
+        return (uapprt)
+    else:
+        return 'x'
+
+from collections import defaultdict
+############################## GRAPH CLASS - to make and store data(distance of each nodes) and the dijsktra algo   #########################
+class Graph():
+    def __init__(self):
+        """
+        self.edges is a dict of all possible next nodes
+        e.g. {'X': ['A', 'B', 'C', 'E'], ...}
+        self.weights has all the weights between two nodes,
+        with the two nodes as a tuple as the key
+        e.g. {('X', 'A'): 7, ('X', 'B'): 2, ...}
+        """
+        self.edges = defaultdict(list)
+        self.weights = {}
+    
+    def add_edge(self, from_node, to_node, weight):
+        # Note: assumes edges are bi-directional
+        self.edges[from_node].append(to_node)
+        self.edges[to_node].append(from_node)
+        self.weights[(from_node, to_node)] = weight
+        self.weights[(to_node, from_node)] = weight
+        
+graph=Graph()        
+edges = [
+    ('34', '33', 10),    ('33', '32', 10),    ('33', '36', 10),    ('33', '35', 10),('36', '35', 10),    ('36', '37', 10),    ('35', '38', 10),    ('38', '37', 10),    ('38', '28', 20),    ('38', '27', 20),   ('25', '26', 20),  ('26', '27', 10),   ('27', '28', 10),    ('28', '29', 10),    ('29', '30', 10),    ('30', '32', 10),    ('30','3',10),   ('3','2',10),    ('2','1',10),    ('1','biss',10),    ('29','4',10),   ('4','2',10), ('34','16',5),    ('16','15',5),    ('15','33',2),    ('15','14',5),    ('14','32',1),    ('14','3',5),    ('6','4',10),   ('29','4',10),    ('7','6',10),  ('7','biss',20),    ('7','8',10),    ('unip','8',10),     ('28','12',10),    ('12','4',1),   ('12','11',10),   ('11','7',10),    ('11','10',10),    ('10','9',10),    ('9','unip',10),     ('13','12',10),    ('13','27',5),    ('17','13',5),    ('17','26',5),    ('17','18',5),   ('18','25',5),    ('biss','8',10),    ('biss','dsw',10), ('unip','unimall',10),    ('unip','phyed',10),    ('unimall','dsw',10),('BH5','25',10),('25','apprt',10),    ('12','20',20),   ('20','19',10),    ('19','phyed',10)  ]     
+for edge in edges:
+    graph.add_edge(*edge)
+      
+
+  
+        
+        
+             
+ ############################# DIJSKTRA FUNTION- it take the detale of graph , current and final destination to calculate shortest distance and return the path ##############
+  
+def dijsktra(graph, initial, end):
+    # shortest paths is a dict of nodes
+    # whose value is a tuple of (previous node, weight)
+    shortest_paths = {initial: (None, 0)}
+    current_node = initial
+    visited = set()
+    
+    while current_node != end:
+        visited.add(current_node)
+        destinations = graph.edges[current_node]
+        weight_to_current_node = shortest_paths[current_node][1]
+
+        for next_node in destinations:
+            weight = graph.weights[(current_node, next_node)] + weight_to_current_node
+            if next_node not in shortest_paths:
+                shortest_paths[next_node] = (current_node, weight)
+            else:
+                current_shortest_weight = shortest_paths[next_node][1]
+                if current_shortest_weight > weight:
+                    shortest_paths[next_node] = (current_node, weight)
+        
+        next_destinations = {node: shortest_paths[node] for node in shortest_paths if node not in visited}
+        if not next_destinations:
+            return "N"
+        # next node is the destination with the lowest weight
+        current_node = min(next_destinations, key=lambda k: next_destinations[k][1])
+    
+    # Work back through destinations in shortest path
+    path = []
+    while current_node is not None:
+        path.append(current_node)
+        next_node = shortest_paths[current_node][0]
+        current_node = next_node
+    # Reverse path
+    path = path[::-1]
+    return path   
+###################### CHECK FUNTION - it check ir the final and current are neibour if yes then nindecate funtion is called and
+############## if not then dijsktra funtion is called an fron the path it indecates the path ################ 
+def check(c,d):
+    
+    x=0
+    y=0
+    
+    if(c==d):
+        x=1
+        compute=tk.Label(root,text="same inputs!!\ntry again",font=("impact",30),bg='red',fg='White')
+        compute.place(x=1050,y=250,width=400,height=100)
+    a=neb(c)
+    for i in a:
+        print ("h",i)
+        if(i==d):
+            x=1
+            y=1
+            print("wwww")
+    
+    for i in ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20']:
+        
+        if(i==c or i==d):
+        
+            print("thisss")
+            compute=tk.Label(root,text="wrong input\n""please check inputs",font=("impact",30),bg='red',fg='White')
+            compute.place(x=1050,y=250,width=400,height=100)
+            x=1        
+    if(x==1):
+        if(y==1):
+            print ("x=1")
+            nindecate(c,d)
+    else:
+        
+        print ("x=o")
+        
+        p=dijsktra(graph,c,d)
+        if (p=="N"):
+            print("that")
+            compute=tk.Label(root,text="wrong input \n""please check inputs ",font=("impact",30),bg='red',fg='White')
+            compute.place(x=1050,y=250,width=400,height=100)
+       
+        else:
+            
+                      
+            for i in p:
+                print(i)
+                if (i=='34' or i=='16'):
+                    a1=canvas.create_oval(920,160,940,180,fill="red")            
+                if (i=='33' or i=='15'):
+                    a2=canvas.create_oval(820,160,840,180,fill="red")            
+                if (i=='32' or i=='14'):
+                    a3=canvas.create_oval(720,160,740,180,fill="red")            
+                if (i=='30' or i=='3'):
+                    a4=canvas.create_oval(660,140,680,160,fill="red")
+                if (i=='phyed'):
+                        a32=canvas.create_oval(340,340,360,360,fill="red")    
+                if (i=='29' or i=='4'):
+                    a5=canvas.create_oval(660,240,680,260,fill="red")            
+                if (i=='28' or i=='12'):
+                    a6=canvas.create_oval(660,340,680,360,fill="red")            
+                if (i=='27' or i=='13'):
+                    a7=canvas.create_oval(660,440,680,460,fill="red")            
+                if (i=='26' or i=='17'):
+                    a8=canvas.create_oval(660,540,680,560,fill="red")            
+                if (i=='25' or i=='18'):
+                    a9=canvas.create_oval(660,640,680,660,fill="red")            
+                if (i=='38'):
+                    a10=canvas.create_oval(670,400,690,420,fill="red")            
+                if (i=='35'):
+                    a10=canvas.create_oval(670,300,690,320,fill="red")
+                    a11=canvas.create_oval(670,180,690,200,fill="red")            
+                if (i=='36'):
+                    a12=canvas.create_oval(900,170,920,190,fill="red")
+                if (i=='biss'):
+                    b=canvas.create_oval(370,80,390,100,fill="red")
+                if (i=='dsw'):
+                    b=canvas.create_oval(340,80,360,100,fill="red")
+                if(i=='BH5'):
+                    a33=canvas.create_oval(750,620,770,640,fill="red")  
+                    a33=canvas.create_oval(850,620,870,640,fill="red") 
+                    a33=canvas.create_oval(950,620,970,640,fill="red")  
+                    a33=canvas.create_oval(1050,620,1070,640,fill="red")  
+                    a33=canvas.create_oval(1150,620,1170,640,fill="red")
+                if(i=='apprt'):
+                    a34=canvas.create_oval(750,620,770,640,fill="red")  
+                    a34=canvas.create_oval(850,620,870,640,fill="red") 
+                    a34=canvas.create_oval(950,620,970,640,fill="red")  
+                    a34=canvas.create_oval(1050,620,1070,640,fill="red")  
+                    a34=canvas.create_oval(1050,660,1070,680,fill="red")
+                if ( ((c=='biss' or c== 'dsw' or c=='unip' or c=='unimall' or c=='phyed' ) and (d=='30'or d=='32'or d=='33'or d=='34'or d=='35'or d=='36'or d=='37'or d=='38'or d=='25'or d=='26'or d=='27'or d=='28'or d=='29' or d=='BH5' or d=='apprt'))or((d=='biss' or d== 'dsw' or d=='unip' or d=='unimall' or d=='phyed' ) and (c=='30'or c=='32'or c=='33'or c=='34'or c=='35'or c=='36'or c=='37'or c=='38'or c=='25'or c=='26'or c=='27'or c=='28'or c=='29'or c=='BH5' or c=='apprt'))):
+                    print ("i"+i)
+                    if (i=='1'):
+                        a14=canvas.create_oval(370,80,390,100,fill="red")
+                    if (i=='2'):
+                        a15=canvas.create_oval(470,80,490,100,fill="red")    
+                    if (i=='3'):
+                        a16=canvas.create_oval(560,80,580,100,fill="red")    
+                    if (i=='4'):
+                        a17=canvas.create_oval(560,200,580,220,fill="red")
+                    if (i=='5'):
+                        a18=canvas.create_oval(560,300,580,320,fill="red")
+                    if (i=='6'):
+                        a19=canvas.create_oval(480,190,500,210,fill="red")
+                    if (i=='7'):
+                        a21=canvas.create_oval(450,167,430,187,fill="red")
+                    if (i=='8'):
+                        a22=canvas.create_oval(375,160,395,180,fill="red")
+                    if (i=='9'):
+                        a23=canvas.create_oval(375,180,395,200,fill="red")
+                    if(i=='10'):
+                        a24=canvas.create_oval(450,250,470,270,fill="red")
+                    if(i=='11'):
+                        a25=canvas.create_oval(500,260,520,280,fill="red")
+                    if(i=='12'):
+                        a26=canvas.create_oval(560,300,580,320,fill="red")
+                    if(i=='13'):  
+                        a27=canvas.create_oval(560,400,580,420,fill="red")
+                    if(i=='14'):
+                        a30=canvas.create_oval(660,60,680,80,fill="red")
+                    if(i=='15'):
+                        a31=canvas.create_oval(780,60,800,80,fill="red")
+                    if(i=='16'):
+                        a32=canvas.create_oval(880,60,900,80,fill="red")
+                       #if (i=='37'):
+                    if(i=='17'):
+                        a28=canvas.create_oval(560,500,580,520,fill="red")# a13=canvas.create_oval(920,160,940,180,fill="red")            
+                    if(i=='18'):
+                        a29=canvas.create_oval(560,600,580,620,fill="red")
+                    if(i=='19'):
+                        a30=canvas.create_oval(440,320,460,340,fill="red")
+                    if(i=='20'):
+                        a31=canvas.create_oval(500,320,520,340,fill="red")
+                    if (i=='phyed'):
+                        a32=canvas.create_oval(340,340,360,360,fill="red")
+               
+                
+            
+                                            
+                
+                        
+                
+            
+
+
+      
+############################# GETC FUNTION - when enter button is pressed in the canvas is funtion is called 
+def getc(c,d):
+    clear()
+    print("1")
+    compute=tk.Label(root,text="",font=("impact",30),bg='yellow',fg='White')
+    compute.place(x=1050,y=250,width=400,height=100)
+    check(c,d)
+def clear():
+    
+        
+        
+    label1=tk.Label(root,text="30",font=("impact",30),bg='black',fg='white')
+    label1.place(x=600,y=100,width=50,height=80)
+
+
+    label2=tk.Label(root,text="29",font=("impact",30),bg='black',fg='white')
+    label2.place(x=600,y=200,width=50,height=80)
+
+    label2=tk.Label(root,text="28",font=("impact",30),bg='black',fg='white')
+    label2.place(x=600,y=300,width=50,height=80)
+
+    label3=tk.Label(root,text="27",font=("impact",30),bg='black',fg='white')
+    label3.place(x=600,y=400,width=50,height=80)
+
+    label4=tk.Label(root,text="26",font=("impact",30),bg='black',fg='white')
+    label4.place(x=600,y=500,width=50,height=80)
+
+    label5=tk.Label(root,text="25",font=("impact",30),bg='black',fg='white')
+    label5.place(x=600,y=600,width=50,height=80)
+
+    label6=tk.Label(root,text="32",font=("impact",30),bg='black',fg='white')
+    label6.place(x=700,y=100,width=80,height=50)
+
+    label7=tk.Label(root,text="33",font=("impact",30),bg='black',fg='white')
+    label7.place(x=800,y=100,width=80,height=50)
+
+    label8=tk.Label(root,text="34",font=("impact",30),bg='black',fg='white')
+    label8.place(x=900,y=100,width=80,height=50)
+
+    label9=tk.Label(root,text="35",font=("impact",30),bg='grey30',fg='white')
+    label9.place(x=700,y=220,width=80,height=50)
+
+    label10=tk.Label(root,text="36",font=("impact",30),bg='black',fg='white')
+    label10.place(x=850,y=220,width=80,height=50)
+
+    label11=tk.Label(root,text="37",font=("impact",30),bg='grey50',fg='white')
+    label11.place(x=800,y=310,width=80,height=50)
+
+    label12=tk.Label(root,text="38",font=("impact",30),bg='black',fg='white')
+    label12.place(x=700,y=380,width=80,height=50)
+
+    label13=tk.Label(root,text="biss.",font=("impact",20),bg='black',fg='white')
+    label13.place(x=360,y=0,width=50,height=30)
+    b=canvas.create_oval(370,80,390,100,fill="yellow",outline="yellow")
+
+    label14=tk.Label(root,text="d\ns\nw",font=("impact",10),bg="black",fg='white')
+    label14.place(x=330,y=0,width=20,height=40)
+    canvas.create_oval(340,80,360,100,fill="yellow",outline="yellow")
+
+    label15=tk.Label(root,text="uni-p",font=("impact",20),bg='black',fg='white')
+    label15.place(x=330,y=200,width=70,height=50)
+
+    label16=tk.Label(root,text="uni-\nmall",font=("impact",10),bg='darkgrey',fg='white')
+    label16.place(x=280,y=200,width=50,height=80)
+    
+    label=tk.Label(root,text="apprt.",font=("impact",20),bg='black',fg='White')
+    label.place(x=1000,y=700,width=80,height=50)
+
+    label17=tk.Label(root,text="phy.\ned.",font=("impact",10),bg='black',fg='white')
+    label17.place(x=320,y=380,width=50,height=50)
+    b=canvas.create_oval(340,340,360,360,fill="yellow",outline="yellow")
+
+    label18=tk.Label(root,text="BH5",font=("impact",30),bg='black',fg='white')
+    label18.place(x=1110,y=560,width=80,height=40)
+    b1=canvas.create_oval(1050,660,1070,680,fill="yellow",outline="yellow")
+    b1=canvas.create_oval(1050,620,1070,640,fill="yellow",outline="yellow")  
+    b1=canvas.create_oval(1150,620,1170,640,fill="yellow",outline="yellow")
+
+
+    a10=canvas.create_oval(670,400,690,420,fill="yellow",outline="yellow")
+
+    a1=canvas.create_oval(920,160,940,180,fill="yellow",outline="yellow")            
+
+    a2=canvas.create_oval(820,160,840,180,fill="yellow",outline="yellow")            
+
+    a3=canvas.create_oval(720,160,740,180,fill="yellow",outline="yellow")            
+
+    a4=canvas.create_oval(660,140,680,160,fill="yellow",outline="yellow")
+
+    a32=canvas.create_oval(340,340,360,360,fill="yellow",outline="yellow")    
+
+    canvas.create_oval(340,80,360,100,fill="yellow",outline="yellow")    
+
+    b=canvas.create_oval(370,80,390,100,fill="yellow",outline="yellow")    
+
+
+    a5=canvas.create_oval(660,240,680,260,fill="yellow",outline="yellow")            
+
+    a6=canvas.create_oval(660,340,680,360,fill="yellow",outline="yellow")            
+
+    a7=canvas.create_oval(660,440,680,460,fill="yellow",outline="yellow")            
+
+    a8=canvas.create_oval(660,540,680,560,fill="yellow",outline="yellow")            
+
+    a9=canvas.create_oval(660,640,680,660,fill="yellow",outline="yellow")            
+
+    a10=canvas.create_oval(670,300,690,320,fill="yellow",outline="yellow")            
+
+    a11=canvas.create_oval(670,180,690,200,fill="yellow",outline="yellow")            
+
+    a12=canvas.create_oval(900,170,920,190,fill="yellow",outline="yellow")
+
+    a33=canvas.create_oval(750,620,770,640,fill="yellow",outline="yellow")  
+    a33=canvas.create_oval(850,620,870,640,fill="yellow",outline="yellow") 
+    a33=canvas.create_oval(950,620,970,640,fill="yellow",outline="yellow")  
+    a33=canvas.create_oval(1050,620,1070,640,fill="yellow",outline="yellow")  
+    a33=canvas.create_oval(1150,620,1170,640,fill="yellow",outline="yellow")
+
+    a34=canvas.create_oval(750,620,770,640,fill="yellow",outline="yellow")  
+    a34=canvas.create_oval(850,620,870,640,fill="yellow",outline="yellow") 
+    a34=canvas.create_oval(950,620,970,640,fill="yellow",outline="yellow")  
+    a34=canvas.create_oval(1050,620,1070,640,fill="yellow",outline="yellow")  
+    a34=canvas.create_oval(1050,660,1070,680,fill="yellow",outline="yellow")
+              
+    
+    a14=canvas.create_oval(370,90,390,110,fill="yellow",outline="yellow")
+
+    a15=canvas.create_oval(470,80,490,100,fill="yellow",outline="yellow")    
+
+    a16=canvas.create_oval(560,80,580,100,fill="yellow",outline="yellow")    
+
+    a17=canvas.create_oval(560,200,580,220,fill="yellow",outline="yellow")
+
+    a18=canvas.create_oval(560,300,580,320,fill="yellow",outline="yellow")
+a19=canvas.create_oval(480,190,500,210,fill="yellow",outline="yellow")
+a21=canvas.create_oval(450,167,430,187,fill="yellow",outline="yellow")
+a22=canvas.create_oval(375,160,395,180,fill="yellow",outline="yellow")
+a24=canvas.create_oval(450,250,470,270,fill="yellow",outline="yellow")
+a25=canvas.create_oval(500,260,520,280,fill="yellow",outline="yellow")
+a26=canvas.create_oval(560,300,580,320,fill="yellow",outline="yellow")
+a27=canvas.create_oval(560,400,580,420,fill="yellow",outline="yellow")
+a30=canvas.create_oval(660,60,680,80,fill="yellow",outline="yellow")
+a31=canvas.create_oval(780,60,800,80,fill="yellow",outline="yellow")
+a32=canvas.create_oval(880,60,900,80,fill="yellow",outline="yellow")
+a28=canvas.create_oval(560,500,580,520,fill="yellow",outline="yellow")# a13=canvas.create_oval(920,160,940,180,fill="red")            
+a29=canvas.create_oval(560,600,580,620,fill="yellow",outline="yellow")
+a30=canvas.create_oval(440,320,460,340,fill="yellow",outline="yellow")
+a31=canvas.create_oval(500,320,520,340,fill="yellow",outline="yellow")
+a32=canvas.create_oval(340,340,360,360,fill="yellow",outline="yellow")
+canvas.create_line(0,100,250,100,440,100,500,70,1120,70,650,720,850,660,1200,660,1200,800,1200,660,850,660,650,720,640,800,650,720,300,720,300,800,300,350,440,350,440,820,440,100,250,100,250,300,300,350)
+canvas.pack(fill=tk.BOTH,expand=tk.YES)
+root.mainloop ()
